@@ -38,6 +38,7 @@ namespace TestTask
             else if (password != pass_box.Text)
             {
                 MessageBox.Show("User wasn't found");
+                add_butt.Enabled = true;
             }
             
         }
@@ -65,12 +66,12 @@ namespace TestTask
             if((name_box.Text != String.Empty) &&(pass_box.Text != String.Empty))
             {
                 check_butt.Enabled = true;
-                add_butt.Enabled = true;
+                
             }
             else
             {
                 check_butt.Enabled = false;
-                add_butt.Enabled =  false;
+                
             }
         }
 
