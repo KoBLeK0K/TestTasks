@@ -34,6 +34,7 @@ namespace TestTask
             if(password == pass_box.Text)
             {
                 MessageBox.Show("User was found");
+                add_butt.Enabled = false;
             }
             else if (password != pass_box.Text)
             {
